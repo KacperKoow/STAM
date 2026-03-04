@@ -1,0 +1,53 @@
+# ==========================================
+# STAM - Główny plik .gitignore 
+# ==========================================
+
+.idea/
+*.iml
+*.iws
+.vscode/
+.history/
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# BACKEND 
+# ==========================================
+backend/target/
+*.jar
+*.war
+*.ear
+*.class
+*.log
+
+*secret*.yml
+*secret*.properties
+
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# FRONTEND 
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+frontend/src/environments/environment.prod.ts
+frontend/src/environments/environment.development.ts
+.env
+.env.*
