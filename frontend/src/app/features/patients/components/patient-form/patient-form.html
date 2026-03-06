@@ -1,0 +1,22 @@
+<div
+  class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-8 flex flex-wrap gap-4 items-end"
+>
+  <div class="flex flex-col gap-2">
+    <label class="text-sm font-semibold text-slate-600">Imię</label>
+    <input pInputText [(ngModel)]="newPatient.firstName" placeholder="np. Jan" class="w-48" />
+  </div>
+  <div class="flex flex-col gap-2">
+    <label class="text-sm font-semibold text-slate-600">Nazwisko</label>
+    <input pInputText [(ngModel)]="newPatient.lastName" placeholder="np. Kowalski" class="w-48" />
+  </div>
+  <div class="flex flex-col gap-2">
+    <label class="text-sm font-semibold text-slate-600">Główny objaw</label>
+    <input
+      pInputText
+      [(ngModel)]="newPatient.mainSymptom"
+      placeholder="np. Ból klatki"
+      class="w-64"
+    />
+  </div>
+  <p-button label="Zarejestruj pacjenta" severity="primary" (onClick)="savePatient()"></p-button>
+</div>

@@ -1,7 +1,11 @@
-<div class="flex flex-col items-center justify-center min-h-screen bg-slate-100">
-  <h2 class="text-4xl font-bold text-blue-800 mb-8">Witaj w systemie STAM! 🏥</h2>
+<div class="min-h-screen bg-slate-50 p-8 font-sans">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-slate-800 mb-8">🏥 STAM - Recepcja i Triaż</h1>
 
-  <p-button label="Check - PrimeNG działa!"></p-button>
+    <app-patient-form></app-patient-form>
+
+    <app-patient-list></app-patient-list>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
