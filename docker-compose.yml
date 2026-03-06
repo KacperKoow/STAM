@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: stam-postgres
+    environment:
+      POSTGRES_DB: stam_db
+      POSTGRES_USER: stam_user
+      POSTGRES_PASSWORD: stam_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - stam_pg_data:/var/lib/postgresql/data
+
+volumes:
+  stam_pg_data:
+    name: stam_pg_data
